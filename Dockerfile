@@ -14,7 +14,7 @@ RUN pip install pyinstaller
 
 # Get duc source
 WORKDIR /opt/
-RUN git clone https://github.com/Pectojin/duplicati_client
+RUN git clone https://github.com/Pectojin/duplicati-client
 
 # Install Duc dependencies
 WORKDIR /opt/duplicati_client
