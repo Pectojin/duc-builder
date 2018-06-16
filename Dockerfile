@@ -22,5 +22,5 @@ RUN pip install -r requirements.txt
 
 # Build executeable
 WORKDIR /opt/duplicati_client/scripts
-#RUN ./linux_build.sh
+
 ENTRYPOINT ["./linux_build.sh"]
