@@ -15,6 +15,6 @@ Go in and create a releases folder for the container to mount
 
 Build and run the container
 
-    docker-compose up
+    docker-compose up --build
 
 Once the container finishes running collect the build in the `releases` folder previously created

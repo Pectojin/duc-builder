@@ -23,4 +23,11 @@ RUN pip install -r requirements.txt
 # Build executeable
 WORKDIR /opt/duplicati_client/scripts
 
+# Workaround to invalidate cache to make Docker always run the following commands when building 
+# https://stackoverflow.com/questions/37013947/force-a-docker-build-to-rebuild-a-single-step
+ARG CACHE_DATE=2016-01-01
+
+# Have to make sure we're on the current master HEAD
+RUN git pull origin master
+
 ENTRYPOINT ["./linux_build.sh"]
