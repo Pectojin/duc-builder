@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  duc-builder:
+    container_name: duc-builder
+    image: pectojin/duc-builder:latest
+    build: .
+    volumes:
+      - ./releases:/opt/duplicati_client/scripts/releases
