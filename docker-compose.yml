@@ -6,4 +6,4 @@ services:
     image: pectojin/duc-builder:latest
     build: .
     volumes:
-      - ./releases:/opt/duplicati_client/scripts/releases
+      - ./releases:/opt/duplicati-client/scripts/releases
