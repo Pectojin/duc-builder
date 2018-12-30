@@ -13,8 +13,13 @@ Go in and create a releases folder for the container to mount
     cd duc-builder
     mkdir releases
 
-Build and run the container
+Build, run the container, and run the linux_build.sh script
 
     docker-compose up --build
+    docker-compose run duc-builder bash
+
+or run the script directly
+
+    docker-compose run duc-builder ./linux_build.sh
 
 Once the container finishes running collect the build in the `releases` folder previously created
